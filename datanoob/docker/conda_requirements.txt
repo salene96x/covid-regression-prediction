@@ -1,0 +1,50 @@
+#utils
+pip
+# pytest
+# psutil
+
+# web
+flask
+
+# db
+sqlalchemy
+# psycopg2
+
+#manipulation
+pandas
+numpy
+
+#statistical testing and modeling
+scipy
+statsmodels
+
+# modeling
+scikit-learn
+
+# explanability
+# eli5
+# lime
+shap
+
+# dimensionality reduction
+# umap-learn
+
+# visualization
+matplotlib
+seaborn
+plotly
+altair
+
+# utils
+pyyaml
+
+# docs
+sphinx
+sphinx_rtd_theme
+
+# api
+# fastapi
+
+# conda install -c basnijholt feast
+# fs
+# "basnijholt feast"
