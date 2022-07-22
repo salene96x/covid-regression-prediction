@@ -7,7 +7,16 @@ services:
     build:
       context: ./datanoob/docker
     ports:
-      - "6969:6969"
+      # jupyterlab
+      - "8888:8888"
+      # mlflow
+      - "5000:5000"
+      # shapash
+      - "8050:8050"
+      # explainer
+      - "3050:3050"
+      # mercury drift detection
+      - "8000:8000"
     volumes:
       - .:/usr/src
       - ./datanoob/datanooblol:/opt/conda/lib/python3.9/datanooblol
