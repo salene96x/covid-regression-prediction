@@ -27,6 +27,6 @@ EXPOSE 8888
 # from notebook.auth import passwd
 # passwd() <- run this command in notebook to harsh your password
 
-# ENTRYPOINT [ "jupyter", "lab", "--ip='*'","--port=8888", "--no-browser","--NotebookApp.token=''", "--NotebookApp.password='sha1:a60aa670ae56:dd1afbc5d9585af67965bc9fe187f315ae31f3d8'", "--allow-root"]
-ENTRYPOINT [ "jupyter", "lab", "--ip='*'","--port=8888", "--no-browser","--NotebookApp.token=''", "--NotebookApp.password='sha1:a60aa670ae56:dd1afbc5d9585af67965bc9fe187f315ae31f3d8'", "--allow-root", "--autoreload"]
+# ENTRYPOINT [ "jupyter", "lab", "--ip='*'","--port=8888", "--no-browser","--NotebookApp.token=''", "--NotebookApp.password='sha1:a60aa670ae56:dd1afbc5d9585af67965bc9fe187f315ae31f3d8'","--NotebookApp.allow_password_change=False", "--allow-root"]
+ENTRYPOINT [ "jupyter", "lab", "--ip='*'","--port=8888", "--no-browser","--NotebookApp.token=''", "--NotebookApp.password='1234'", "--allow-root", "--autoreload"]
 # ENTRYPOINT [ "jupyter", "lab", "--ip='*'","--port=8888", "--no-browser","--allow-root"]

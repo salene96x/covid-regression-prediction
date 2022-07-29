@@ -10,7 +10,7 @@ services:
       # jupyterlab
       - "8888:8888"
       # mlflow
-      - "5000:5000"
+      - "5959:5959"
       # shapash
       - "8050:8050"
       # explainer
