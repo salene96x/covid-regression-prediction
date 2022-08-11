@@ -27,14 +27,15 @@ umap-learn
 fastapi
 
 # db
-arango
+#arango
 #duckdb
-python-arango
+#python-arango
+#mongodb
 
 # fs
 feast
 #dtale
 opendatasets
 sweetviz
-Autoviz
-pandas-profiling
+#Autoviz
+#pandas-profiling

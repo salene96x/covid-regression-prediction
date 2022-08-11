@@ -2,6 +2,12 @@ FROM continuumio/miniconda3
 
 RUN apt-get update
 
+#RUN apt-get install sox ffmpeg libcairo2 libcairo2-dev
+
+#RUN apt-get install texlive-full
+
+#RUN apt install libpython3.9-dev
+
 RUN apt install -y make
 
 RUN conda install -c conda-forge jupyterlab

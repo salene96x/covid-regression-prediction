@@ -1,11 +1,11 @@
-version: '3.7'
+version: '3.6.7'
 
 services:
 
   notebook:
     container_name: jupyterlab
     build:
-      context: ./datanoob/docker
+      context: ./instances/docker
     ports:
       # jupyterlab
       - "8888:8888"
