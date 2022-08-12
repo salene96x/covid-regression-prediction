@@ -1,0 +1,20 @@
+DATASET:
+    PATH: /usr/src/covid_prediction/our-world-in-data-covid19-dataset/owid-covid-data.csv
+    NAME: covid-etl
+    X: ['total_cases', 'new_cases', 'total_deaths', 'new_deaths',
+       'reproduction_rate', 'total_tests', 'new_tests', 'positive_rate',
+       'tests_per_case', 'tests_units', 'total_vaccinations',
+       'people_vaccinated', 'people_fully_vaccinated', 'total_boosters',
+       'new_vaccinations', 'stringency_index', 'population',
+       'population_density', 'median_age', 'aged_65_older', 'aged_70_older',
+       'gdp_per_capita', 'extreme_poverty', 'cardiovasc_death_rate',
+       'diabetes_prevalence', 'female_smokers', 'male_smokers',
+       'handwashing_facilities', 'hospital_beds_per_thousand',
+       'life_expectancy', 'human_development_index', 'year', 'month', 'day']
+    Y: ['new_deaths']
+MODEL:
+    MODELTYPE: RandomForestRegression
+DATASETSPLIT:
+    TEST: 0.3
+    TRAIN: 0.7
+    RANDOMSTATE: 66

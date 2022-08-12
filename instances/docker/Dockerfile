@@ -12,13 +12,33 @@ RUN apt install -y make
 
 RUN conda install -c conda-forge jupyterlab
 
+RUN git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew \
+&& mkdir ~/.linuxbrew/bin \
+&& ln -s ../Homebrew/bin/brew ~/.linuxbrew/bin \
+&& eval $(~/.linuxbrew/bin/brew shellenv) \
+&& brew --version
+
+RUN export PATH=$HOME/.linuxbrew/bin:$PATH
+
+RUN conda config --add channels conda-forge
+
+RUN conda config --set channel_priority strict
+
+RUN conda install gcc_linux-64
+
 COPY conda_requirements.txt .
 
 RUN conda install -y --file conda_requirements.txt
 
+RUN conda install -c conda-forge dtale
+#RUN conda install -c conda-forge auto-sklearn
+RUN conda install -c conda-forge pandas-profiling
+
 COPY pip_requirements.txt .
 
 RUN pip3 install -r pip_requirements.txt
+
+# RUN ngrok authtoken 2DEGDZxDjWuOAR9yVmjir8I9fDB_7szo2ChpoCCk1zRLSnjzD
 
 EXPOSE 8888
 

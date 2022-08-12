@@ -44,7 +44,12 @@ sphinx_rtd_theme
 
 # api
 # fastapi
+# dtale
+# pandas_profiling
 
 # conda install -c basnijholt feast
 # fs
 # "basnijholt feast"
+
+#auto-sklearn
+#pandas-profiling
