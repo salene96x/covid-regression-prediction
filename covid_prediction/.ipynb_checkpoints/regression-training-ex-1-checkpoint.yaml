@@ -1,7 +1,7 @@
 DATASET:
     PATH: /usr/src/covid_prediction/our-world-in-data-covid19-dataset/owid-covid-data.csv
     NAME: covid-etl
-    X: ['total_cases', 'new_cases', 'total_deaths', 'new_deaths',
+    X: ['total_cases', 'new_cases', 'total_deaths',
        'reproduction_rate', 'total_tests', 'new_tests', 'positive_rate',
        'tests_per_case', 'tests_units', 'total_vaccinations',
        'people_vaccinated', 'people_fully_vaccinated', 'total_boosters',
