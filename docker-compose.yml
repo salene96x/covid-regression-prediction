@@ -4,6 +4,7 @@ services:
 
   notebook:
     container_name: jupyterlab
+    hostname: jupyter.local
     build:
       context: ./instances/docker
     ports:
