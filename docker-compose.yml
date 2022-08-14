@@ -22,7 +22,7 @@ services:
       - "40000:40000"
     volumes:
       - .:/usr/src
-      - ./datanoob/datanooblol:/opt/conda/lib/python3.9/datanooblol
+      - ./volume/volume:/opt/conda/lib/python3.9/volume
     working_dir: /usr/src
       # - /usr/src
     # environment:
