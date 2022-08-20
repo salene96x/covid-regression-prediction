@@ -1,0 +1,4 @@
+artifact_location: file:///usr/src/covid_prediction/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: experiment_regressor

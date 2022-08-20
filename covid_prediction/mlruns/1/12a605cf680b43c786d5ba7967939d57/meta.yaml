@@ -1,0 +1,15 @@
+artifact_uri: file:///usr/src/covid_prediction/mlruns/1/12a605cf680b43c786d5ba7967939d57/artifacts
+end_time: 1660976857243
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 12a605cf680b43c786d5ba7967939d57
+run_uuid: 12a605cf680b43c786d5ba7967939d57
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1660976857170
+status: 4
+tags: []
+user_id: root
