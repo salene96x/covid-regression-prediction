@@ -3,7 +3,7 @@ from sklearn.linear_model import ElasticNet
 from sklearn.linear_model import SGDRegressor
 from sklearn.svm import SVR
 from sklearn.linear_model import BayesianRidge
-#from sklearn.catboost import CatBoostRegressor
+#from catboost import CatBoostRegressor
 from sklearn.kernel_ridge import KernelRidge
 from sklearn.linear_model import LinearRegression
 from xgboost.sklearn import XGBRegressor
@@ -61,14 +61,14 @@ class training:
         y_test = scaler_y.transform(y_test)
         return x_train, x_test, y_train, y_test, scaler_y
     def get_x(self):
-        x_df = self.df.drop(columns=self.config['DATASET']['Y']).copy()
-        x = self.df[self.config['DATASET']['X']]
+        x_df = self.df.drop(columns=self.config['dataset']['y']).copy()
+        x = self.df[self.config['dataset']['x']]
         return x
     def get_y(self):
-        y = self.df[self.config['DATASET']['Y']]
+        y = self.df[self.config['dataset']['y']]
         return y
     def get_df(self):
-        etl = covid_etl(self.config["DATASET"]['PATH'])
+        etl = covid_etl('/usr/src/covid_prediction/our-world-in-data-covid19-dataset/owid-covid-data.csv')
         df = etl.do()
         return df
     def run(self):

@@ -19,7 +19,7 @@ from sklearn.kernel_ridge import KernelRidge
 from sklearn.preprocessing import StandardScaler
 import mlflow
 import mlflow.sklearn
-import selenium
+#import selenium
 import logging
 import os
 from new_etl import covid_etl
@@ -63,8 +63,8 @@ class Trainer:
     def split_data(self, config):
         etl = covid_etl(f'/usr/src/covid_prediction/our-world-in-data-covid19-dataset/owid-covid-data.csv')
         df = etl.do()
-        self.df_x = df[config['x']]
-        self.df_y = df[config['y']]
+        self.df_x = df[config['dataset']['x']]
+        self.df_y = df[config['dataset']['y']]
         x_train, x_test, y_train, y_test = train_test_split(self.df_x, self.df_y, test_size=float(config['train_test_split']['test_size']), random_state=int(config['train_test_split']['random_state']))
         std_x = StandardScaler()
         std_y = StandardScaler()
